@@ -125,7 +125,7 @@
                 + '</div>'
                 + '</td>'
                 + '<tr>'
-                + '<td>' + data.data[i].skill+ '</td>'
+                + '<td>' + ((!data.data[i].skill) ? '<span class="label label-danger">tidak ada data</span>' : data.data[i].skill) + '</td>'
                 + '</tr>');
         }
     }
