@@ -1,0 +1,1 @@
+SELECT u.name AS name_programmer, (SELECT COUNT(s.id) FROM skills s WHERE s.user_id = u.id) AS jumlah_skill FROM users u
